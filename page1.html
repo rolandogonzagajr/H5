@@ -15,85 +15,25 @@
             <a href="page3.html"> b) TOR Network</a>
         </div>
         <div class="content">
-            <h1>Schneier 2015: Applied Cryptography: 2.3 One-Way Functions and 2.4 One-Way Hash Functions</h1>
-            <p>In Bruce Schneier's book "Applied Cryptography" (2015), the following important concepts are explained about one-way functions and one-way hash functions:</p>
-<h2>One-Way Functions</h2>
-    <p>
-        One-way functions are like puzzles that are easy to solve in one direction but nearly impossible to solve in reverse.
-    </p>
-    <ul>
-        <li>Think of it as breaking a plate into pieces, which is simple, but putting the pieces back together to form a complete plate is very hard.</li>
-        <li>While we don't have absolute mathematical proof that one-way functions exist, many real-world functions behave this way.</li>
-    </ul>
+            <h1>Quintin 2014: 7 Things You Should Know About Tor</h1>
+            <body>
 
-    <h2>One-Way Hash Functions</h2>
-    <p>
-        One-way hash functions take any length of data and produce a fixed-size code, much like condensing a big story into a short summary.
-    </p>
-    <ul>
-        <li>They are designed to make it easy to create this code from the data but extremely difficult to figure out the original data from the code.</li>
-        <li>A good one-way hash function ensures that it's very unlikely for two different pieces of data to produce the same code.</li>
-    </ul>
+  <p>Tor is an effective tool for protecting user anonymity online. It has been shown to be resilient against attempts to compromise it, even by powerful adversaries like the NSA. Tor is used by a diverse range of people, including activists, the military, families, and journalists.</p>
 
-    <h2>Message Authentication Codes (MACs)</h2>
-    <p>
-        MACs are like secret handshakes for data. They use a one-way hash function and a secret key to ensure data is both genuine and unchanged.
-    </p>
-    <ul>
-        <li>Only people who know the secret handshake (the key) can verify that the data hasn't been tampered with.</li>
-        <li>MACs are valuable for confirming that messages or information haven't been altered during transmission.</li>
-    </ul>
+  <p>Despite initial funding from the US Navy, Tor is an open-source project with no known military backdoors. Operating a Tor relay is believed to be legal under US law.</p>
 
-    <p><strong>Reference:</strong> Schneier, B. (2015). Applied Cryptography: Protocols, Algorithms, and Source Code in C. Wiley.</p>    
-            <h1>Disobey 2018 - Phishing through Email by Niklas Särökaari</h1>
+  <p>Tor is designed to be user-friendly, with tools like Tor Browser Bundle and Tails making it easy to get started. Speed improvements have been made in recent years, and developers continue to work on making Tor faster.</p>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m9YFJGSHYtY" frameborder="0" allowfullscreen></iframe>
+  <p>However, Tor is not foolproof. Users can compromise their anonymity if they use it incorrectly. It is important to use the recommended tools and to keep software up to date. Users should also be aware of potential risks, such as logging into identifiable services over Tor.</p>
 
-    <p>This YouTube video discusses phishing attacks carried out through email. In the video, Niklas Särökaari talks about various aspects of email phishing attacks, including how these attacks are performed, common tactics employed by cybercriminals, and ways to mitigate such threats. Phishing is a technique used by malicious actors to trick individuals into revealing sensitive information by posing as a legitimate entity via email.</p>
-
-    <h2>Reasons People Click on Phishing Links</h2>
-    <p>His presentation highlighted the results why people click on phishing links in a research entitled "Blackhat 2016: Exploiting Curiosity and Context - How to Make People Click on a Dangerous Link Despite Their Security Awareness:</p>
-    <ul>
-        <li><strong>Curiosity (34%):</strong> People tend to click on links out of curiosity, wanting to explore what lies behind them.</li>
-        <li><strong>Expecting Similar Content (30%):</strong> If individuals expect something similar to what they are familiar with, they are more likely to click on a link.</li>
-        <li><strong>Familiar Sender (16%):</strong> Attackers often use common names to appear familiar to recipients, increasing the likelihood of clicks.</li>
-    </ul>
-
-    <h2>Protection Mechanisms and Bypass</h2>
-    <ul>
-        <li><strong>Sender Policy Framework (SPF):</strong> SPF is configured to verify the authenticity of the sender's email address. It checks whether the email was sent from an authorized server.</li>
-        <li><strong>Domain Keys Identified Mail (DKIM):</strong> DKIM provides email validation and authentication. It ensures that the email content has not been tampered with during transit.</li>
-        <li><strong>Domain Message Authentication Reporting and Conformance (DMARC):</strong> DMARC combines SPF and DKIM to make a domain more reputable and legitimate. It enforces alignment checks for both SPF and DKIM, enhancing email security.</li>
-        <li><strong>Filtering:</strong>
-            <ul>
-                <li><strong>Malware and Spam Filtering:</strong> These filters protect against emails containing malicious attachments or spam content.</li>
-                <li><strong>URL Whitelisting/Web Filtering:</strong> Controls are implemented to allow only trusted URLs and filter out malicious ones.</li>
-                <li><strong>Greylisting:</strong> A mechanism that temporarily rejects emails to combat spam and phishing.</li>
-            </ul>
-        </li>
-        <li><strong>Site Cloning:</strong> Cybercriminals clone legitimate websites to harvest credentials and deceive users.</li>
-        <li><strong>IDN Homograph Attack:</strong> Phishers use punycode or Unicode to register domains that appear legitimate but are malicious.</li>
-    </ul>
-
-    <h2>Effective Phishing Strategies</h2>
-    <p>Phishing campaigns often succeed due to the following strategies:</p>
-    <ul>
-        <li><strong>Package Delivery Service:</strong> Deceptive emails related to package deliveries are commonly effective.</li>
-        <li><strong>Impersonation of Service Desks, IT Departments, or Technical Support:</strong> Recipients are more likely to trust emails from these entities.</li>
-        <li><strong>Impersonation of Legitimate Sites (Gmail, LinkedIn, etc.):</strong> Emails that mimic trusted sites deceive recipients.</li>
-        <li><strong>Relevance to the Company (Campaigns, Marketing, etc.):</strong> Phishing campaigns tailored to a company's activities are more likely to succeed.</li>
-    </ul>
-
-    <h2>Recommended Actions</h2>
-    <p>To protect against phishing attacks:</p>
-    <ul>
-        <li><strong>Implement SPF, DKIM, and DMARC:</strong> Strengthen email authentication and validation.</li>
-        <li><strong>Domain Security:</strong> Ensure your domain is protected from cybercriminals.</li>
-        <li><strong>User Education and Training:</strong> Educate and train users to recognize phishing attempts.</li>
-        <li><strong>Secure Infrastructure:</strong> Maintain a secure IT infrastructure to prevent unauthorized access.</li>
-    </ul>
+  <p>Overall, Tor is a valuable tool for people who want to protect their online privacy. It is effective, accessible, and legal. However, it is important to use it correctly to avoid compromising your anonymity.</p>
+</body>
+   
+   
        <h2>Reference</h2>
-Särökaari, N. (2018). Disobey 2018 - Phishing through email. [YouTube video]. Available at: https://www.youtube.com/watch?v=m9YFJGSHYtY. Accessed: 20 September 2023.
+            Quintin, C. (2014) '7 Things You Should Know About Tor', Electronic Frontier Foundation. [Online] Available at:https://www.eff.org/deeplinks/2014/07/7-things-you-should-know-about-tor. Accessed: 27 September 2023.
+
+
 
 
         </div>
