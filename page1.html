@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoSec</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftnav">
+             <a class="active" href="page1.html"> x) Read / watch and summarize</a>
+            <a href="page2.html"> a) Install Hashcat b) Then Crash</a>
+            <a href="page3.html"> c) Gone phising</a>
+        </div>
+        <div class="content">
+            <h1>Schneier 2015: Applied Cryptography: 2.3 One-Way Functions and 2.4 One-Way Hash Functions</h1>
+            <p>In Bruce Schneier's book "Applied Cryptography" (2015), the following important concepts are explained about one-way functions and one-way hash functions:</p>
+<h2>One-Way Functions</h2>
+    <p>
+        One-way functions are like puzzles that are easy to solve in one direction but nearly impossible to solve in reverse.
+    </p>
+    <ul>
+        <li>Think of it as breaking a plate into pieces, which is simple, but putting the pieces back together to form a complete plate is very hard.</li>
+        <li>While we don't have absolute mathematical proof that one-way functions exist, many real-world functions behave this way.</li>
+    </ul>
+
+    <h2>One-Way Hash Functions</h2>
+    <p>
+        One-way hash functions take any length of data and produce a fixed-size code, much like condensing a big story into a short summary.
+    </p>
+    <ul>
+        <li>They are designed to make it easy to create this code from the data but extremely difficult to figure out the original data from the code.</li>
+        <li>A good one-way hash function ensures that it's very unlikely for two different pieces of data to produce the same code.</li>
+    </ul>
+
+    <h2>Message Authentication Codes (MACs)</h2>
+    <p>
+        MACs are like secret handshakes for data. They use a one-way hash function and a secret key to ensure data is both genuine and unchanged.
+    </p>
+    <ul>
+        <li>Only people who know the secret handshake (the key) can verify that the data hasn't been tampered with.</li>
+        <li>MACs are valuable for confirming that messages or information haven't been altered during transmission.</li>
+    </ul>
+
+    <p><strong>Reference:</strong> Schneier, B. (2015). Applied Cryptography: Protocols, Algorithms, and Source Code in C. Wiley.</p>    
+            <h1>Disobey 2018 - Phishing through Email by Niklas Särökaari</h1>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m9YFJGSHYtY" frameborder="0" allowfullscreen></iframe>
+
+    <p>This YouTube video discusses phishing attacks carried out through email. In the video, Niklas Särökaari talks about various aspects of email phishing attacks, including how these attacks are performed, common tactics employed by cybercriminals, and ways to mitigate such threats. Phishing is a technique used by malicious actors to trick individuals into revealing sensitive information by posing as a legitimate entity via email.</p>
+
+    <h2>Reasons People Click on Phishing Links</h2>
+    <p>His presentation highlighted the results why people click on phishing links in a research entitled "Blackhat 2016: Exploiting Curiosity and Context - How to Make People Click on a Dangerous Link Despite Their Security Awareness:</p>
+    <ul>
+        <li><strong>Curiosity (34%):</strong> People tend to click on links out of curiosity, wanting to explore what lies behind them.</li>
+        <li><strong>Expecting Similar Content (30%):</strong> If individuals expect something similar to what they are familiar with, they are more likely to click on a link.</li>
+        <li><strong>Familiar Sender (16%):</strong> Attackers often use common names to appear familiar to recipients, increasing the likelihood of clicks.</li>
+    </ul>
+
+    <h2>Protection Mechanisms and Bypass</h2>
+    <ul>
+        <li><strong>Sender Policy Framework (SPF):</strong> SPF is configured to verify the authenticity of the sender's email address. It checks whether the email was sent from an authorized server.</li>
+        <li><strong>Domain Keys Identified Mail (DKIM):</strong> DKIM provides email validation and authentication. It ensures that the email content has not been tampered with during transit.</li>
+        <li><strong>Domain Message Authentication Reporting and Conformance (DMARC):</strong> DMARC combines SPF and DKIM to make a domain more reputable and legitimate. It enforces alignment checks for both SPF and DKIM, enhancing email security.</li>
+        <li><strong>Filtering:</strong>
+            <ul>
+                <li><strong>Malware and Spam Filtering:</strong> These filters protect against emails containing malicious attachments or spam content.</li>
+                <li><strong>URL Whitelisting/Web Filtering:</strong> Controls are implemented to allow only trusted URLs and filter out malicious ones.</li>
+                <li><strong>Greylisting:</strong> A mechanism that temporarily rejects emails to combat spam and phishing.</li>
+            </ul>
+        </li>
+        <li><strong>Site Cloning:</strong> Cybercriminals clone legitimate websites to harvest credentials and deceive users.</li>
+        <li><strong>IDN Homograph Attack:</strong> Phishers use punycode or Unicode to register domains that appear legitimate but are malicious.</li>
+    </ul>
+
+    <h2>Effective Phishing Strategies</h2>
+    <p>Phishing campaigns often succeed due to the following strategies:</p>
+    <ul>
+        <li><strong>Package Delivery Service:</strong> Deceptive emails related to package deliveries are commonly effective.</li>
+        <li><strong>Impersonation of Service Desks, IT Departments, or Technical Support:</strong> Recipients are more likely to trust emails from these entities.</li>
+        <li><strong>Impersonation of Legitimate Sites (Gmail, LinkedIn, etc.):</strong> Emails that mimic trusted sites deceive recipients.</li>
+        <li><strong>Relevance to the Company (Campaigns, Marketing, etc.):</strong> Phishing campaigns tailored to a company's activities are more likely to succeed.</li>
+    </ul>
+
+    <h2>Recommended Actions</h2>
+    <p>To protect against phishing attacks:</p>
+    <ul>
+        <li><strong>Implement SPF, DKIM, and DMARC:</strong> Strengthen email authentication and validation.</li>
+        <li><strong>Domain Security:</strong> Ensure your domain is protected from cybercriminals.</li>
+        <li><strong>User Education and Training:</strong> Educate and train users to recognize phishing attempts.</li>
+        <li><strong>Secure Infrastructure:</strong> Maintain a secure IT infrastructure to prevent unauthorized access.</li>
+    </ul>
+       <h2>Reference</h2>
+Särökaari, N. (2018). Disobey 2018 - Phishing through email. [YouTube video]. Available at: https://www.youtube.com/watch?v=m9YFJGSHYtY. Accessed: 20 September 2023.
+
+
+        </div>
+    </div>
+</body>
+</html>
